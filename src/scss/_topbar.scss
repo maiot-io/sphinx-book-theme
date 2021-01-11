@@ -18,6 +18,13 @@
         padding-bottom: 0.25rem;
         padding-right: 0;
 
+        a.topbar-link {
+            font-weight: 400;
+            font-size: 1.3rem;
+            padding: 0.3rem 1rem 0.3rem 1rem;
+            color: $ci-green;
+        }
+
         > button, > div, > a {
             float: left;
             height: 100%;

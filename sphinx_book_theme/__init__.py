@@ -286,6 +286,8 @@ def add_to_context(app, pagename, templatename, context, doctree):
             (app.config.html_baseurl.rstrip("/"), "_static/" + context["logo"])
         )
 
+    context["lol"] = "rolf"
+
     # Add HTML context variables that the pydata theme uses that we configure elsewhere
     # For some reason the source_suffix sometimes isn't there even when doctree is
     if doctree and context.get("page_source_suffix"):

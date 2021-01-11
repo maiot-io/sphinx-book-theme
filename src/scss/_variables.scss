@@ -9,13 +9,25 @@ $breakpoint-sm: 576px;
 
 // Colors
 $non-content-grey: #5a5a5a;
+$ci-green: #2bd978;
+$ci-purple: #431d93;
 
-$topbar-height: 3em;
+$topbar-height: 4em;
 
 // Overrides for pydata sphinx theme. Will take effect when the next version is released
 :root {
-    --color-primary: 0, 123, 255;
-    --color-info: 255, 193, 7;
-    --color-warning: 253, 126, 20;
-    --color-danger: 220, 53, 69;
+  --color-primary: 0, 123, 255;
+  --color-info: 255, 193, 7;
+  --color-warning: 253, 126, 20;
+  --color-danger: 220, 53, 69;
+  --font-family-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: "Roboto mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+body {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.header-style, h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }

@@ -11,15 +11,9 @@ setup(
     name="sphinx-book-theme",
     version=version,
     python_requires=">=3.6",
-    author="Project Jupyter Contributors",
-    author_email="jupyter@googlegroups.com",
-    url="https://jupyterbook.org/",
-    project_urls={
-        "Documentation": "https://jupyterbook.org",
-        "Funding": "https://jupyter.org/about",
-        "Source": "https://github.com/jupyter/jupyter-book/",
-        "Tracker": "https://github.com/jupyter/jupyter-book/issues",
-    },
+    author="maiot GmbH",
+    author_email="support@maiot.io",
+    url="https://maiot.io/",
     # this should be a whitespace separated string of keywords, not a list
     keywords="reproducible science environments scholarship notebook",
     description="Jupyter Book: Create an online book with Jupyter Notebooks",

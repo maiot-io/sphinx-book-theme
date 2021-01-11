@@ -1,24 +1,45 @@
 <footer class="footer mt-5 mt-md-0">
     <div class="container">
-      <p>
-        {% if author %}
-          By {{ author }}<br/>
-        {% endif %}
-        {%- if show_copyright %}
-          {%- if hasdoc('copyright') %}
-            {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>
-          {%- else %}
-            {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}<br/>
-          {%- endif %}
-        {%- endif %}
-        {%- if last_updated %}
-          {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}<br/>
-        {%- endif %}
-        {%- if theme_extra_footer %}
-          <div class="extra_footer">
-            {{ theme_extra_footer }}
-          </div>
-        {%- endif %}
-      </p>
+        <div class="row">
+            <div class="col-md">
+                Proudly built by <a href="https://maiot.io/" target="_blank">{{ author }}</a>.<br/>
+                {%- if show_copyright %}
+                  {%- if hasdoc('copyright') %}
+                    {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+                  {%- else %}
+                    {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+                  {%- endif %}
+                {%- endif %}
+            </div>
+            <div class="col-md">
+                <a href="https://zenml.io/legal" target="_blank">Imprint</a>
+            </div>
+            <div class="col-md">
+                <a href="https://zenml.io/" target="_blank">ZenML</a>
+            </div>
+            <div class="col-md">
+                <a href="https://github.com/maiot-io/zenml" target="_blank">Github</a>
+            </div>
+        </div>
+{#      <p>#}
+{#        {% if author %}#}
+{#          By {{ author }}<br/>#}
+{#        {% endif %}#}
+{#        {%- if show_copyright %}#}
+{#          {%- if hasdoc('copyright') %}#}
+{#            {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>#}
+{#          {%- else %}#}
+{#            {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}<br/>#}
+{#          {%- endif %}#}
+{#        {%- endif %}#}
+{#        {%- if last_updated %}#}
+{#          {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}<br/>#}
+{#        {%- endif %}#}
+{#        {%- if theme_extra_footer %}#}
+{#          <div class="extra_footer">#}
+{#            {{ theme_extra_footer }}#}
+{#          </div>#}
+{#        {%- endif %}#}
+{#      </p>#}
     </div>
   </footer>
