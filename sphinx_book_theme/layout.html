@@ -18,10 +18,12 @@
     </style>
 {% endblock %}
 
+{{ pathto('_static/' , 1) }}
+
 {% block extrahead %}
-    <link rel="stylesheet" href="_static/klaro.css">
-    <script defer type="text/javascript" src="_static/config.js"></script>
-    <script defer type="text/javascript" src="_static/klaro.max.js"></script>
+    <link rel="stylesheet" href="{{ pathto('_static/klaro.css', 1) }}">
+    <script defer type="text/javascript" src="{{ pathto('_static/config.js', 1) }}"></script>
+    <script defer type="text/javascript" src="{{ pathto('_static/klaro.max.js', 1) }}"></script>
     <!-- Segment -->
     <script type="opt-in" data-type="application/javascript" data-name="analytics">
         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
@@ -33,7 +35,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ pathto('_static/favicon/apple-touch-icon.png', 1) }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ pathto('_static/favicon/favicon-32x32.png', 1) }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/favicon/favicon-16x16.png', 1) }}">
 
     {{ super() }}
 
